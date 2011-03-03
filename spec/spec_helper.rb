@@ -6,6 +6,7 @@ require 'rspec'
 require 'delayed_job_mongo_mapper'
 require 'delayed/backend/shared_spec'
 
+MongoMapper.connection = Mongo::Connection.new('rails-mysql',nil)
 MongoMapper.database = 'dl_spec'
 
 class Story

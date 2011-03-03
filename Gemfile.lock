@@ -1,39 +1,46 @@
 GIT
   remote: git://github.com/collectiveidea/delayed_job.git
-  revision: fcca64c20c60b5d93d2ca7ad416ae30e33e588e7
+  revision: 4513aeea6f6a182a4bb2eff5dfd3f998a23da5ff
   specs:
-    delayed_job (2.1.1)
+    delayed_job (2.1.4)
       activesupport (~> 3.0)
       daemons
 
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.0.3)
-    bson (1.1.2)
-    bson_ext (1.1.2)
+    activesupport (3.0.5)
+    bson (1.2.4)
+    bson_ext (1.2.4)
+    columnize (0.3.2)
     daemons (1.1.0)
     diff-lcs (1.1.2)
-    i18n (0.4.2)
+    i18n (0.5.0)
     jnunemaker-validatable (1.8.4)
       activesupport (>= 2.3.4)
-    mongo (1.1.2)
-      bson (>= 1.1.1)
+    linecache (0.43)
+    mongo (1.2.4)
+      bson (>= 1.2.4)
     mongo_mapper (0.8.6)
       activesupport (>= 2.3.4)
       jnunemaker-validatable (~> 1.8.4)
       plucky (~> 0.3.6)
-    plucky (0.3.6)
+    plucky (0.3.7)
       mongo (~> 1.1)
     rake (0.8.7)
-    rspec (2.1.0)
-      rspec-core (~> 2.1.0)
-      rspec-expectations (~> 2.1.0)
-      rspec-mocks (~> 2.1.0)
-    rspec-core (2.1.0)
-    rspec-expectations (2.1.0)
+    rspec (2.5.0)
+      rspec-core (~> 2.5.0)
+      rspec-expectations (~> 2.5.0)
+      rspec-mocks (~> 2.5.0)
+    rspec-core (2.5.1)
+    rspec-expectations (2.5.0)
       diff-lcs (~> 1.1.2)
-    rspec-mocks (2.1.0)
+    rspec-mocks (2.5.0)
+    ruby-debug (0.10.4)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.4.0)
+    ruby-debug-base (0.10.4)
+      linecache (>= 0.3)
 
 PLATFORMS
   ruby
@@ -45,3 +52,4 @@ DEPENDENCIES
   mongo_mapper
   rake
   rspec
+  ruby-debug
