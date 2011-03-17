@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 gem 'delayed_job',  :git => 'git://github.com/collectiveidea/delayed_job.git'
 gem 'bson_ext'
-gem 'mongo_mapper'
+gem 'mongo_mapper', :git => "git://github.com/jnunemaker/mongomapper.git"
 gem 'i18n'
 
 

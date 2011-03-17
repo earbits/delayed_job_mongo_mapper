@@ -6,25 +6,33 @@ GIT
       activesupport (~> 3.0)
       daemons
 
+GIT
+  remote: git://github.com/jnunemaker/mongomapper.git
+  revision: 70581fa741d21a48bd739534a464db7fabcaf7b7
+  specs:
+    mongo_mapper (0.9.0)
+      activemodel (~> 3.0.0)
+      activesupport (~> 3.0.0)
+      plucky (~> 0.3.6)
+
 GEM
   remote: http://rubygems.org/
   specs:
+    activemodel (3.0.5)
+      activesupport (= 3.0.5)
+      builder (~> 2.1.2)
+      i18n (~> 0.4)
     activesupport (3.0.5)
     bson (1.2.4)
     bson_ext (1.2.4)
+    builder (2.1.2)
     columnize (0.3.2)
     daemons (1.1.0)
     diff-lcs (1.1.2)
     i18n (0.5.0)
-    jnunemaker-validatable (1.8.4)
-      activesupport (>= 2.3.4)
     linecache (0.43)
     mongo (1.2.4)
       bson (>= 1.2.4)
-    mongo_mapper (0.8.6)
-      activesupport (>= 2.3.4)
-      jnunemaker-validatable (~> 1.8.4)
-      plucky (~> 0.3.6)
     plucky (0.3.7)
       mongo (~> 1.1)
     rake (0.8.7)
@@ -49,7 +57,7 @@ DEPENDENCIES
   bson_ext
   delayed_job!
   i18n
-  mongo_mapper
+  mongo_mapper!
   rake
   rspec
   ruby-debug
