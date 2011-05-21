@@ -8,12 +8,12 @@ GIT
 
 GIT
   remote: git://github.com/jnunemaker/mongomapper.git
-  revision: 70581fa741d21a48bd739534a464db7fabcaf7b7
+  revision: 19d1e42ad20127f589610160a70cff20f43b0b6a
   specs:
     mongo_mapper (0.9.0)
-      activemodel (~> 3.0.0)
-      activesupport (~> 3.0.0)
-      plucky (~> 0.3.6)
+      activemodel (~> 3.0)
+      activesupport (~> 3.0)
+      plucky (~> 0.3.8)
 
 GEM
   remote: http://rubygems.org/
@@ -46,7 +46,7 @@ GEM
       activesupport (= 3.0.5)
     activesupport (3.0.5)
     arel (2.0.9)
-    bson (1.2.4)
+    bson (1.3.1)
     bson_ext (1.2.4)
     builder (2.1.2)
     columnize (0.3.2)
@@ -62,10 +62,10 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mongo (1.2.4)
-      bson (>= 1.2.4)
-    plucky (0.3.7)
-      mongo (~> 1.1)
+    mongo (1.3.1)
+      bson (>= 1.3.1)
+    plucky (0.3.8)
+      mongo (~> 1.3)
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.13)
