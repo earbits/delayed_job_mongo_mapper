@@ -62,7 +62,7 @@ module Delayed
           begin
             result = self.collection.find_and_modify(
               :query  => conditions,
-              :sort   => [['locked_by', -1], ['priority', 1], ['run_at', 1]],
+              :sort   => [['locked_by', -1], ['priority', -1], ['run_at', 1]],
               :update => {"$set" => {:locked_at => right_now, :locked_by => worker.name}}
             )
 
