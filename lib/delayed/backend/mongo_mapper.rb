@@ -68,7 +68,9 @@ module Delayed
 
             # Return result as a MongoMapper document.
             # When MongoMapper starts supporting findAndModify, this extra step should no longer be necessary.
-            self.first :conditions => {:_id => result["_id"]}
+            if result
+              self.first :conditions => {:_id => result["_id"]}
+            end
           rescue Mongo::OperationFailure
             nil # no jobs available
           end
